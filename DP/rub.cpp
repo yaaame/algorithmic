@@ -14,11 +14,6 @@ int rob(vector<int>& nums)
 int main()
 {
     vector<int>v{2,7,9,3,1};
-    int a=10;
-    int b=20;
-    string s="1433223";
-    ::int16_t c=30;
-    ::int64_t d=100;
     cout<<rob(v)<<endl;
     cout<<-3%2<<endl;
     return 3;
