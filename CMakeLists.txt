@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(algorithmic)
+set(CMAKE_CXX_STANDARD 20)
+foreach(FILE_PATH ${DEMO_RESOURCE})
+    add_executable(${FILE_NAME} ${FILE_PATH} LC/twoSum.cpp LC/twoSum.cpp LC/threeSum.cpp)
+endforeach()
