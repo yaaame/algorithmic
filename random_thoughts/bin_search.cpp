@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include<map>
 using namespace std;
 bool bin_search(const vector<int>&v,int value)
 {
@@ -15,13 +16,24 @@ bool bin_search(const vector<int>&v,int value)
         else if(copy[mid]>value)
             l=mid+1;
         else
-            r=mid;
+            r=mid-1;
     }
     return false;
 }
+float fun()
+{
+    return 3;
+}
+class P
+{
+public:
+    void operator ()(int val)
+    {
+       cout<<val<<',';
+    }
+};
 int main()
 {
     vector<int>v{1,5,9,7,6,1,5,3,2,4,86,3};
-    cout<<bin_search(v,4)<<endl;
     return 0;
 }
