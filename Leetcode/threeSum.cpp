@@ -84,6 +84,7 @@ int main()
     cout<<256*1024/4*1024<<endl;
     int n;
     cin>>n;
+    
     vector<int>v(n);
     int count=0,sum=0;
     int t;
